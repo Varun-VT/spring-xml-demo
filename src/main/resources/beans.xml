@@ -47,5 +47,9 @@
         <property name="message" value="you're in BeanLifeCycleDemo property message" />
     </bean>
 
+    <bean id="demoBean" class="com.stackroute.BeanLifecycleDemoBean"
+          init-method="customInit"
+          destroy-method="customDestroy"></bean>
+
 </beans>
 
