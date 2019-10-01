@@ -5,21 +5,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--<bean id="actorA" class="com.stackroute.Actor">-->
-<!--    <constructor-arg name="name" value="ActorA"></constructor-arg>-->
-<!--    <constructor-arg name="age" value="50"></constructor-arg>-->
-<!--    <constructor-arg name="gender" value="Male"></constructor-arg>-->
-<!--</bean>-->
-<!--<bean id="actorB" class="com.stackroute.Actor">-->
-<!--    <constructor-arg name="name" value="ActorB"></constructor-arg>-->
-<!--    <constructor-arg name="age" value="40"></constructor-arg>-->
-<!--    <constructor-arg name="gender" value="Male"></constructor-arg>-->
-<!--</bean>-->
-<!--<bean id="actorC" class="com.stackroute.Actor">-->
-<!--    <constructor-arg name="name" value="ActorC"></constructor-arg>-->
-<!--    <constructor-arg name="age" value="30"></constructor-arg>-->
-<!--    <constructor-arg name="gender" value="Female"></constructor-arg>-->
-<!-- </bean>-->
+
 
     <bean id="MovieA" class="com.stackroute.Movie" name="MovieB" scope="prototype">
     <property name="actor">
