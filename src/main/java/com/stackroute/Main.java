@@ -18,5 +18,11 @@ public class Main
         System.out.println(movie.getActor());
         System.out.println(movie2.getActor());
 
+        ApplicationContext context = movie.getApplicationContext();
+        Movie m= (Movie)context.getBean("movie2");
+        System.out.println(m.getActor().toString());
+
+        Movie m2=(Movie) Movie.getBeanFactory().getBean("movie3");
+        System.out.println(m2.getActor().toString());
     }
 }
