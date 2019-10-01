@@ -1,6 +1,7 @@
 package com.stackroute;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -24,5 +25,9 @@ public class Main
 
         Movie m2=(Movie) Movie.getBeanFactory().getBean("movie3");
         System.out.println(m2.getActor().toString());
+
+        ((ConfigurableApplicationContext)applicationContext).close();
+
+
     }
 }

@@ -42,5 +42,10 @@
         <property name="actor" ref="actor1" />
 
     </bean>
+
+    <bean id="beanlifecycledemo" class="com.stackroute.BeanLifecycleDemoBean">
+        <property name="message" value="you're in BeanLifeCycleDemo property message" />
+    </bean>
+
 </beans>
 
